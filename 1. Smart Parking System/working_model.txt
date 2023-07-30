@@ -1,0 +1,21 @@
+IoT-Based Smart Parking System Working Model
+
+
+                            Smart Parking System
+                                     |
+                      +--------------+--------------+
+                      |                             |
+              Hardware Components          Software Components
+                      |                             |
+          +-----------+-----------+                 |
+          |                       |                 |
+    Arduino Board            Ultrasonic      Central Server
+          |                   Sensors               |
+          |                       |                 |
+          +-----------+-----------+                 |
+                      |                      Data Processing
+              Occupancy Detection              and Storage
+                      |                             |
+          +-----------+-----------+                 |
+          |                       |             Web/Mobile
+   LED Indicators          Display Output      Applications

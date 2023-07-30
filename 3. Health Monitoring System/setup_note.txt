@@ -1,0 +1,33 @@
+Here's a step-by-step breakdown of the code's process:
+
+Include necessary libraries: The code includes the required libraries for using LCD, SoftwareSerial, OneWire, DallasTemperature, and PulseSensorPlayground.
+
+Define pin assignments and variables: Pin assignments and variables are defined, including the pins for LCD, SoftwareSerial, OneWire bus, PulseSensor analog input, and buzzer. Other variables include the number of temperature devices, temperature value, BPM (beats per minute), threshold value, and timing variables.
+
+Setup function:
+
+Initialize LCD and serial communication.
+Begin SoftwareSerial communication with ESP module.
+Initialize the DallasTemperature library and get the number of temperature devices.
+Configure the PulseSensorPlayground library.
+Set the pin mode and initial state for the buzzer.
+Display the startup message on the LCD and briefly activate the buzzer.
+Clear the LCD.
+Loop function:
+
+Get the BPM (beats per minute) from the PulseSensor.
+If a heart beat is detected, beep the buzzer, update the LCD with the BPM value, and delay briefly.
+Request temperature readings from the sensors.
+Iterate through each temperature device and if a device address is successfully retrieved, get the temperature value and update the LCD with the temperature reading.
+Upload the BPM and temperature values to the ESP module at a regular interval.
+printTemperature function:
+
+Given a device address, retrieve the temperature in Celsius using the DallasTemperature library.
+beep function:
+
+Activate the buzzer briefly by setting its pin state to HIGH, delay, and then set the pin state to LOW.
+upload function:
+
+Check the elapsed time since the last upload.
+If the interval has passed, send the BPM and temperature values to the ESP module using SoftwareSerial communication.
+The above steps outline the main processes in the code, including initializing components, reading sensor values, updating the LCD display, and communicating with the ESP module for data upload.

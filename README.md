@@ -1,7 +1,7 @@
 # Bharat_Intern_Projects
 Three IoT-Based projects provided by Bharat Intern in the internship period 10 July to 10 August.
 
-This repository contains three iot based projects created by Sumesh Sarkar with responce to the Internship provided by Bharat Intern.
+This repository contains three iot based projects created with responce to the Internship provided by Bharat Intern.
 The internship period was from 10 July to 10 August of 2023.
 
 This contains following projects:
